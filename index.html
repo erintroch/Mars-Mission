@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e2fdaa5e93.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Mars Mission</title>
+  </head>
+
+  <body class="body">
+    <div class="switch-overlay hidden">
+      <i class="fas fa-globe-europe"></i>
+    </div>
+    <div class="no-star"></div>
+    <div class="surround-planet-one">
+      <img src="assets/img/planethree.png" alt="planeet" class="planet-one" />
+    </div>
+    <div class="surround-planet-two">
+      <div class="planet-two"></div>
+    </div>
+    <canvas class="canvas" width="500" height="500"></canvas>
+    <main class="main">
+      <div class="robot-interface">
+        <div class="mission-day">
+          <h2>Mission day - Sol 214</h2>
+          <div class="error_warning">!</div>
+        </div>
+
+        <div class="flex-testwriter">
+          <div class="testwriter">
+            <div class="typewriter1">
+              <h1 class="type-text">.....</h1>
+            </div>
+          </div>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="answer-div">Press Enter / Key Down</div>
+
+        <div class="robot-complete">
+          <div class="eyes" id="eyes">
+            <div class="surround-eyes">
+              <div class="overflow-eyes">
+                <div class="shadow-color-eye">
+                  <div class="eye-blinking">
+                    <div class="eye-black-up"></div>
+                    <div class="eye-black-up"></div>
+                  </div>
+                  <div class="color-eye__red"></div>
+                  <div class="color-eye__blue"></div>
+                  <div class="eye"></div>
+                </div>
+              </div>
+            </div>
+            <div class="surround-eyes">
+              <div class="shadow-color-eye">
+                <div class="eye-blinking">
+                  <div class="eye-black-up"></div>
+                  <div class="eye-black-up"></div>
+                </div>
+                <div class="color-eye__red"></div>
+                <div class="color-eye__blue"></div>
+                <div class="eye"></div>
+              </div>
+            </div>
+          </div>
+          <div class="all__mouth">
+            <div class="mouth-neutral"></div>
+            <div class="mouth-happy">
+              <div class="line__mouth-happy"></div>
+              <div class="extend__mouth-happy"></div>
+              <div class="circle__mouth-happy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-help cta-help-href hidden">Go to Mars!</div>
+    </main>
+
+    <audio src="./assets/audio/intro.mp3" loop></audio>
+
+    <!-- <audio class="transparancy fixed-sound" id="spacesound" controls autoplay>
+        <source src="./assets/audio/spacesound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> -->
+
+    <script src="js/robot.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

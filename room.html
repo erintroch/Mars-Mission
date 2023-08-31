@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e2fdaa5e93.js" crossorigin="anonymous"></script>
+    <title>Mars Mission Official</title>
+</head>
+
+<body class="center-body">
+    <div class="mute-button">
+        <i class="fas volume fa-volume-up"></i>
+    </div>
+    <div class="switch-overlay">
+        <i class="fas fa-globe-europe"></i>
+    </div>
+    <div class="overlay-fail hidden">
+        <div class="fail-message-complete">
+            <p class="fail-message">You failed the mission.</p>
+            <p class="sub-fail-message">Calling the drone instead of closing the gap in the conservatory... I would consider saving the only living organisms on Mars first!</p>
+        </div>
+        <a class="no-style" href="room.html">
+            <div class="try-again-button">
+                <p class="try-again-text">TRY AGAIN</p>
+            </div>
+        </a>
+    </div>
+    <div class="wind-dust-div">
+        <div class="wind-circle wind-circle__one"></div>
+        <div class="wind-circle wind-circle__two"></div>
+        <div class="wind-circle wind-circle__three"></div>
+        <div class="wind-circle wind-circle__four"></div>
+        <div class="wind-circle wind-circle__five"></div>
+    </div>
+    <div class="check-userflow"></div>
+    <div class="tips_and_tricks-info-out tip-out">
+        <div class="head-tips_and_tricks">
+            <p class="tips-title">TIPS:</p>
+            <div class="close-tip">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <p class="tips-tip">You can find certain items by clicking around on... well, things on Mars. :)</p>
+        <p class="tips-tip-two"></p>
+    </div>
+    <div class="clickeble-items"></div>
+    <div class="alert_new_message"></div>
+    <canvas class="canvas lower-canvas" width="500" height="500"></canvas>
+    <canvas class="canvas-two" width="300" height="300"></canvas>
+    <canvas class="canvas-three" width="300" height="300"></canvas>
+    <canvas class="canvas-four" width="300" height="300"></canvas>
+    <div class="create-background">
+        <div class="div-part-one"></div>
+        <div class="div-part-two"></div>
+        <div class="div-part-three"></div>
+        <div class="div-part-four"></div>
+    </div>
+    <div class="create-images"></div>
+    <div class="center_isometric-grid">
+        <div class="isometric-grid">
+            <!-- <div class="tryit"></div> -->
+            <!-- <img src="./assets/img/planethree.png" alt="planet" class="tryit"> -->
+        </div>
+    </div>
+    <div class="item-robot-div-in div-in">
+        <div>
+            <div class="arrow__button"><i class="fas fa-chevron-right"></i></div>
+            <div class="tips_and_tricks">Tips and tricks</div>
+            <div class="robot-complete">
+                <div class="eyes" id="eyes">
+                    <div class="surround-eyes">
+                        <div class="overflow-eyes">
+                            <div class="shadow-color-eye">
+                                <div class="eye-blinking">
+                                    <div class="eye-black-up"></div>
+                                    <div class="eye-black-up"></div>
+                                </div>
+                                <div class="color-eye__red"></div>
+                                <div class="color-eye__blue"></div>
+                                <div class="eye"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="surround-eyes">
+                        <div class="shadow-color-eye">
+                            <div class="eye-blinking">
+                                <div class="eye-black-up"></div>
+                                <div class="eye-black-up"></div>
+                            </div>
+                            <div class="color-eye__red"></div>
+                            <div class="color-eye__blue"></div>
+                            <div class="eye"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__mouth">
+                    <div class="mouth-neutral"></div>
+                    <div class="mouth-happy">
+                        <div class="line__mouth-happy"></div>
+                        <div class="extend__mouth-happy"></div>
+                        <div class="circle__mouth-happy"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-bag">
+                <div class="center-item-title">
+                    <p class="item-bag-title">ITEMS</p>
+                </div>
+            </div>
+        </div>
+        <div class="item-bag commands">
+            <div class="center-item-title">
+                <!-- <p class="item-bag-title">COMMANDS</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="arrow__button-out"><i class="fas fa-chevron-left"></i></div>
+
+    <div class="warning-message hidden highest-z"></div>
+
+    <div class="spacesounddiv">
+        <audio class="transparancy fixed-sound" id="spacesound" controls autoplay loop>
+            <source src="./assets/audio/spacesound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/room.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <script src="js/drone.js"></script>
+    <script type="module" src="js/issues.js"></script>
+    <script type="module" src="js/moveitems.js"></script>
+</body>
+
+</html>
